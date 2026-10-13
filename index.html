@@ -31,7 +31,7 @@
       <main>
         <section class="hero" id="top">
           <p class="prompt"><span class="accent">$</span> whoami</p>
-          <h1>taly<span class="cursor" aria-hidden="true">&#9608;</span></h1>
+          <h1>taly<span class="cursor" aria-hidden="true"></span></h1>
           <p class="lead">developer, builder, security researcher.</p>
           <p class="sub">I make small, useful things with code and learn in public.</p>
           <dl class="status">
@@ -105,6 +105,18 @@
         <span>plain html + css</span>
       </footer>
     </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.documentElement.classList.add('js');
+      document.getElementById('year').textContent = new Date().getFullYear();
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.sec-title, .project, .skills li, .more, .contact-note, .big-link').forEach(function (el) {
+        el.classList.add('reveal');
+        io.observe(el);
+      });
+    </script>
   </body>
 </html>
