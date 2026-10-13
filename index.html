@@ -31,7 +31,7 @@
       <main>
         <section class="hero" id="top">
           <p class="prompt"><span class="accent">$</span> whoami</p>
-          <h1>taly<span class="cursor" aria-hidden="true"></span></h1>
+          <h1><span id="typewriter">taly</span><span class="cursor" aria-hidden="true"></span></h1>
           <p class="lead">developer, builder, security researcher.</p>
           <p class="sub">I make small, useful things with code and learn in public.</p>
           <dl class="status">
@@ -108,6 +108,23 @@
     <script>
       document.documentElement.classList.add('js');
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // typewriter for the hero name
+      (function () {
+        var el = document.getElementById('typewriter');
+        if (!el) return;
+        var word = el.textContent;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        el.textContent = '';
+        var i = 0;
+        setTimeout(function step() {
+          if (i < word.length) {
+            el.textContent += word.charAt(i++);
+            setTimeout(step, 90 + Math.floor(Math.random() * 60));
+          }
+        }, 180);
+      })();
+
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
           if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }

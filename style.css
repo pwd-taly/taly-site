@@ -282,10 +282,9 @@ footer {
 }
 
 /* ------- load animation (hero, above the fold) ------- */
-.prompt, h1, .lead, .sub, .status {
+.prompt, .lead, .sub, .status {
   animation: rise 0.65s var(--ease) both;
 }
-h1 { animation-delay: 0.06s; }
 .lead { animation-delay: 0.12s; }
 .sub { animation-delay: 0.18s; }
 .status { animation-delay: 0.24s; }
