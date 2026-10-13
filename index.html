@@ -3,57 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Taly — developer, learner, and builder." />
-    <meta name="theme-color" content="#f4f0e8" />
-    <title>Taly — Developer</title>
+    <meta name="description" content="taly - developer, builder, security researcher." />
+    <meta name="theme-color" content="#0a0d12" />
+    <title>taly / developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <nav aria-label="Primary navigation">
-        <a class="wordmark" href="#top" aria-label="Taly home">TA<span>•</span>LY</a>
-        <a class="nav-link" href="https://github.com/pwd-taly" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
+    <div class="frame">
+      <span class="reg reg-tl" aria-hidden="true">+</span>
+      <span class="reg reg-tr" aria-hidden="true">+</span>
+      <span class="reg reg-bl" aria-hidden="true">+</span>
+      <span class="reg reg-br" aria-hidden="true">+</span>
 
-      <section class="hero" id="top">
-        <p class="eyebrow reveal">Developer / Explorer / Builder</p>
-        <h1 class="reveal delay-1">Hello, I’m<br /><em>Taly.</em></h1>
-        <div class="intro reveal delay-2">
-          <p>I’m learning in public and making useful things with code.</p>
-          <a class="arrow-link" href="https://github.com/pwd-taly" target="_blank" rel="noreferrer">See what I’m building <span aria-hidden="true">↓</span></a>
-        </div>
-      </section>
+      <header class="topbar">
+        <a class="wordmark" href="#top">taly<span class="accent">@</span>runs-on.dev</a>
+        <nav aria-label="Primary">
+          <a href="#work">projects</a>
+          <a href="#toolbox">toolbox</a>
+          <a href="#contact">contact</a>
+          <a class="external" href="https://github.com/pwd-taly" target="_blank" rel="noreferrer">github&#8599;</a>
+        </nav>
+      </header>
 
-      <section class="signal" aria-label="Currently">
-        <span class="pulse" aria-hidden="true"></span>
-        <p>Currently exploring the open web, AI tools, and small ideas worth shipping.</p>
-      </section>
+      <main>
+        <section class="hero" id="top">
+          <p class="prompt"><span class="accent">$</span> whoami</p>
+          <h1>taly<span class="cursor" aria-hidden="true">&#9608;</span></h1>
+          <p class="lead">developer, builder, security researcher.</p>
+          <p class="sub">I make small, useful things with code and learn in public.</p>
+          <dl class="status">
+            <div><dt>status</dt><dd>available for interesting problems</dd></div>
+            <div><dt>now</dt><dd>exploring the open web, AI tools, and small ideas worth shipping</dd></div>
+          </dl>
+        </section>
 
-      <section class="work" id="work">
-        <div class="section-heading">
-          <p class="eyebrow">A starting point</p>
-          <p class="count">01 —</p>
-        </div>
-        <article>
-          <p class="project-type">Python / Cryptography</p>
-          <h2>Caesar<br />Cipher</h2>
-          <p class="project-copy">A classic cipher implemented as a small, approachable programming project.</p>
-          <a class="project-link" href="https://github.com/pwd-taly/Caesar-Cipher" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
-        </article>
-      </section>
+        <section class="work" id="work">
+          <h2 class="sec-title"><span class="accent">$</span> ls ./projects</h2>
+          <ul class="projects">
+            <li class="project">
+              <div class="p-main">
+                <h3>runs-on.dev <span class="tag">fork</span></h3>
+                <p>Free subdomains for developers. Claim yourname.runs-on.dev in seconds and point it anywhere.</p>
+              </div>
+              <div class="p-meta">
+                <span class="lang">Next.js</span>
+                <span class="lang">DNS</span>
+                <span class="lang">Vercel</span>
+                <a class="arrow" href="https://github.com/pwd-taly/runs-on.dev" target="_blank" rel="noreferrer">view&#8599;</a>
+              </div>
+            </li>
+            <li class="project">
+              <div class="p-main">
+                <h3>whisperpair-scanner <span class="tag private">private</span></h3>
+                <p>Security research tool for detecting CVE-2025-36911 in Google Fast Pair BLE devices.</p>
+              </div>
+              <div class="p-meta">
+                <span class="lang">Android</span>
+                <span class="lang">BLE</span>
+                <span class="lang">security</span>
+              </div>
+            </li>
+            <li class="project">
+              <div class="p-main">
+                <h3>caesar-cipher</h3>
+                <p>The classic substitution cipher, implemented as a small, approachable programming project.</p>
+              </div>
+              <div class="p-meta">
+                <span class="lang">Python</span>
+                <span class="lang">cryptography</span>
+                <a class="arrow" href="https://github.com/pwd-taly/Caesar-Cipher" target="_blank" rel="noreferrer">view&#8599;</a>
+              </div>
+            </li>
+          </ul>
+          <p class="more">+4 more repos, private</p>
+        </section>
 
-      <section class="contact">
-        <p class="eyebrow">Find me online</p>
-        <a href="https://github.com/pwd-taly" target="_blank" rel="noreferrer">github.com/pwd-taly <span aria-hidden="true">↗</span></a>
-      </section>
-    </main>
-    <footer>
-      <p>© <span id="year"></span> Taly</p>
-      <p>taly.runs-on.dev</p>
-    </footer>
+        <section class="toolbox" id="toolbox">
+          <h2 class="sec-title"><span class="accent">$</span> cat ./toolbox</h2>
+          <ul class="skills">
+            <li>Python</li>
+            <li>JavaScript / Next.js</li>
+            <li>HTML / CSS</li>
+            <li>Android / BLE research</li>
+            <li>AI tools / agents</li>
+          </ul>
+        </section>
+
+        <section class="contact" id="contact">
+          <h2 class="sec-title"><span class="accent">$</span> contact</h2>
+          <p class="contact-note">Open to interesting problems and collaborations.</p>
+          <a class="big-link" href="https://github.com/pwd-taly" target="_blank" rel="noreferrer">github.com/pwd-taly<span class="accent">&#8599;</span></a>
+        </section>
+      </main>
+
+      <footer>
+        <span>&copy; <span id="year"></span> taly</span>
+        <span>taly.runs-on.dev</span>
+        <span>plain html + css</span>
+      </footer>
+    </div>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
