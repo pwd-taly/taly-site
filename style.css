@@ -92,7 +92,6 @@ header, main, footer { position: relative; z-index: 1; }
   max-width: var(--max);
   margin: 0 auto;
   padding: 1.4rem var(--gutter);
-  border-bottom: 1px solid var(--line);
 }
 .wordmark { font-weight: 600; font-size: 14px; letter-spacing: 0.01em; }
 .wordmark .accent, .accent { color: var(--accent); }
@@ -155,8 +154,6 @@ h1 {
 .status {
   display: grid;
   gap: 0.5rem;
-  border-top: 1px solid var(--line);
-  padding-top: 1.25rem;
   max-width: 40rem;
 }
 .status div { display: grid; grid-template-columns: 7ch 1fr; gap: 1.25rem; }
@@ -168,7 +165,6 @@ h1 {
   max-width: var(--max);
   margin: 0 auto;
   padding: clamp(3rem, 7vh, 5.5rem) var(--gutter);
-  border-top: 1px solid var(--line);
 }
 .sec-title {
   font-size: 15px;
@@ -186,7 +182,6 @@ h1 {
   grid-template-columns: 1.6fr 1fr;
   gap: 1.5rem;
   padding: 1.75rem 0 1.75rem 1.25rem;
-  border-top: 1px solid var(--line);
 }
 .project::before {
   content: "";
@@ -198,7 +193,6 @@ h1 {
   background: transparent;
   transition: background 0.18s ease;
 }
-.project:last-child { border-bottom: 1px solid var(--line); }
 .project:hover::before { background: var(--accent); }
 .project:hover h3 { color: var(--accent); }
 .p-main h3 {
@@ -278,7 +272,6 @@ footer {
   gap: 1rem;
   color: var(--faint);
   font-size: 12px;
-  border-top: 1px solid var(--line);
 }
 
 /* ------- load animation (hero, above the fold) ------- */
